@@ -1,0 +1,271 @@
+config_version = 20
+
+[bar.default]
+background_opacity = 0.59999998658895493
+capsule = true
+capsule_opacity = 0.59999998658895493
+capsule_padding = 10.0
+capsule_thickness = 0.69999998807907104
+center = [ "media" ]
+concave_edge_corners = false
+end = [
+    "tray",
+    "notifications",
+    "group:g1",
+    "group:g2",
+    "spacer_2",
+    "group:g4",
+    "spacer_2",
+    "keyboard_layout",
+    "spacer_2",
+    "group:g3",
+    "spacer_2",
+    "session"
+]
+margin_edge = 16
+margin_ends = 16
+padding = 7
+radius = 80
+start = [ "launcher", "workspaces" ]
+thickness = 42
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_container"
+    id = "g1"
+    members = [ "clock", "date" ]
+    opacity = 0.5
+    padding = 10.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_container"
+    id = "g2"
+    members = [ "cpu", "temp", "ram", "sysmon" ]
+    opacity = 0.5
+    padding = 10.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_container"
+    id = "g3"
+    members = [ "volume", "input_volume" ]
+    opacity = 0.60000002384185791
+    padding = 10.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_container"
+    id = "g4"
+    members = [ "network", "network_rx", "network_tx" ]
+    opacity = 0.60000002384185791
+    padding = 10.0
+
+[control_center]
+sidebar = "full"
+sidebar_section = "full"
+
+[dock]
+background_opacity = 0.59999998658895493
+icon_size = 32
+launcher_position = "start"
+main_axis_padding = 24
+margin_edge = 16
+pinned = [ "org.mozilla.firefox", "org.gnome.Nautilus", "com.mitchellh.ghostty", "dev.zed.Zed", "discord", "steam" ]
+radius = 80
+reserve_space = false
+smart_auto_hide = true
+
+[hot_corners]
+enabled = true
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[location]
+address = "Zagreb, Croatia"
+auto_locate = true
+custom_schedule = true
+sunrise = "06:00"
+sunset = "16:00"
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DP-3", "lockscreen-login-box@DP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1720.0
+    cy = 1258.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-3"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1720.0
+    cy = 1258.0
+    output = "DP-3"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[nightlight]
+enabled = true
+
+[shell]
+avatar_path = "/home/leo/Pictures/Wallpapers/pFrancis.jpeg"
+font_family = "Noto Sans"
+niri_overview_type_to_launch_enabled = true
+panel_anchor_bar = "default"
+polkit_agent = true
+
+    [shell.launcher]
+    app_grid = true
+    default_view = "all"
+    fetch_exchange_rates = false
+    pinned = [
+        "org.mozilla.firefox",
+        "dev.zed.Zed",
+        "steam",
+        "io.github.slgobinath.SafeEyes",
+        "org.onlyoffice.desktopeditors",
+        "org.gnome.Nautilus",
+        "md.obsidian.Obsidian",
+        "com.blackmagicdesign.resolve",
+        "com.obsproject.Studio",
+        "com.nousresearch.hermes",
+        "dev.vencord.Vesktop",
+        "com.mitchellh.ghostty"
+    ]
+
+    [shell.panel]
+    list_item_background = true
+
+    [shell.screen_corners]
+    enabled = true
+
+    [shell.screenshot]
+    annotate = true
+    directory = "/home/leo/Pictures/Screenshots"
+
+[theme]
+builtin = "Rosé Pine"
+community_palette = "Rose Pine Moon"
+custom_palette = "ultrawidewallpapersdotnet-1570-mut"
+mode = "auto"
+
+    [theme.templates]
+    builtin_ids = [ "ghostty", "helix", "niri" ]
+
+[wallpaper]
+directory = "/home/leo/Pictures/Wallpapers"
+
+    [wallpaper.automation]
+    enabled = true
+
+    [wallpaper.default]
+    path = "/home/leo/Pictures/Wallpapers/nice.png"
+
+    [wallpaper.last]
+    path = "/home/leo/Pictures/Wallpapers/nice.png"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/leo/Pictures/Wallpapers/nice.png"
+
+[widget.cpu]
+label_min_width = 25
+
+[widget.network_rx]
+label_min_width = 40
+network_speed_compact = true
+network_speed_unit = "mb"
+
+[widget.network_tx]
+label_min_width = 40
+network_speed_compact = true
+network_speed_unit = "mb"
+
+[widget.ram]
+label_min_width = 55
+
+[widget.session]
+color = "#FF5656"
+
+[widget.spacer_2]
+type = "spacer"
+
+[widget.sysmon]
+stat = "disk_used_pct"
+
+[widget.temp]
+label_min_width = 35
+
+[widget.workspaces]
+scale = 1.1000000000000001
