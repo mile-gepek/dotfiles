@@ -1,0 +1,115 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "soft_wrap": "prefer_line",
+  "semantic_tokens": "combined",
+  "edit_predictions": {
+    "provider": "zed",
+  },
+  "minimap": {
+    "show": "never",
+  },
+  "colorize_brackets": true,
+  "tabs": {
+    "git_status": false,
+  },
+  "tab_bar": {
+    "show": false,
+  },
+  "format_on_save": "on",
+  "relative_line_numbers": "enabled",
+  "auto_signature_help": true,
+  "show_signature_help_after_edits": true,
+  "vim": {
+    "toggle_relative_line_numbers": false,
+    "use_system_clipboard": "on_yank",
+  },
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "languages": {
+    "Rust": {
+      "inlay_hints": {
+        "show_type_hints": false,
+        "show_background": true,
+        "enabled": true,
+      },
+    },
+    "Python": {
+      "inlay_hints": {
+        "enabled": true,
+      },
+      "language_servers": ["ty", "ruff"],
+    },
+  },
+  "debugger": {
+    "dock": "right",
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "cli_default_open_behavior": "existing_window",
+  "helix_mode": true,
+  "buffer_font_family": "Hack Nerd Font Mono FC Ligatured",
+  "buffer_font_features": {
+    "calt": true,
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss04": true,
+    "ss05": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true,
+    "ss10": true,
+    "liga": true,
+  },
+  "agent": {
+    "button": false,
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 16.0,
+  "buffer_font_size": 15.0,
+  "theme": {
+    "mode": "system",
+    "light": "Monokai Nebula Light",
+    "dark": "0x96f Theme Lighter",
+  },
+  "terminal": {
+    "font_family": "Hack Nerd Font Mono FC Ligatured",
+    "flexible": true,
+    "font_features": {
+      "calt": true,
+      "ss01": true,
+      "ss02": true,
+      "ss03": true,
+      "ss04": true,
+      "ss05": true,
+      "ss06": true,
+      "ss07": true,
+      "ss08": true,
+      "ss09": true,
+      "ss10": true,
+      "liga": true,
+    },
+  },
+}
